@@ -1,0 +1,134 @@
+body{
+    min-height: 100vh;
+    margin: 0px;
+    padding: 0px;
+}
+.block{
+	background: black;
+	color: white;
+	font-family: 'TIMES NEW ROMAN';
+	font-weight: 300;
+	font-size: 90px;
+	padding-top: 40vh;
+  text-align: start;
+	overflow: hidden;
+    width:100%;
+height: 30vw;
+}
+.header {
+	display: inline-block;
+	overflow: hidden;
+	white-space: nowrap;
+}
+.header:first-of-type {
+	animation: showup 7s infinite;
+}
+.header:last-of-type {
+	width: 0px;
+	animation: reveal 7s infinite;
+}
+.header:last-of-type span {
+	margin-left: -355px;
+	animation: slidein 8s infinite;
+}
+@keyframes showup {
+	0% {
+		opacity: 0;
+	}
+	20% {
+		opacity: 1;
+	}
+	80% {
+		opacity: 1;
+	}
+	100% {
+		opacity: 0;
+	}
+}
+
+@keyframes slidein {
+	0% {
+		margin-left: -800px;
+	}
+	20% {
+		margin-left: -800px;
+	}
+	35% {
+		margin-left: 0px;
+	}
+	100% {
+		margin-left: -2px;
+	}
+}
+
+@keyframes reveal {
+	0% {
+		opacity: 0;
+		width: 0px;
+	}
+	20% {
+		opacity: 1;
+		width: 0px;
+	}
+	30% {
+		width: 2100px;
+	}
+	80% {
+		opacity: 1;
+	}
+	100% {
+		opacity: 0;
+		width: 2100px;
+	}
+}
+
+ul li {
+    background: lightgrey;
+    list-style: none;
+    margin: 5px 0;
+    margin-left: -40px;
+  }
+  ul li span {
+    position: relative;
+    left: -1000%;
+    margin-left: 20px;
+    font-size: 70px;
+    transform: scale(10);
+    transition: all 0.5s ease-in-out 0.3s;
+  }
+  ul li:hover span {
+    left: 0;
+    transform: scale(1);
+  }
+  span {
+    display: inline-block;
+  }
+  a {
+    background-color: rgb(70, 70, 70);
+    box-shadow: 0 5px 0 rgb(0, 0, 0);
+    color: white;
+    padding: 2em 2.5em;
+    position: relative;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 150%;
+  }
+  
+  a:hover {
+    background-color: #212121;
+    cursor: pointer;
+    font-weight: BOLDER;
+  }
+  
+  a:active {
+    box-shadow: none;
+    top: 5px;
+  }
+
+.block3 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 10vh;
+    margin-top: 5%;
+  }

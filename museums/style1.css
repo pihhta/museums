@@ -1,0 +1,281 @@
+
+html{
+  min-height: 100%;
+  overflow: hidden;
+}
+body{
+  height: calc(100vh - 8em);
+  padding: 4em;
+  color: rgb(255, 255, 255);
+  font-family: 'times new roman', monospace;  
+  background-color: rgb(46, 46, 46);  
+}
+.line-1{
+    position: relative;
+    top: 5%;  
+    left: -0.5%;
+
+    width: 50em;
+    margin: 0 auto;
+    border-right: 2px solid rgb(255, 255, 255);
+    font-size: 580%;
+    text-align: center;
+    white-space: nowrap;
+    overflow: hidden;
+    transform: translateY(-50%);    
+}
+
+/* Анимация */
+.anim-typewriter{
+  animation: typewriter 5s steps(44) 1s 1 normal both,
+             blinkTextCursor 50ms steps(44) infinite normal;
+}
+@keyframes typewriter{
+  from{width: 0;}
+  to{width: 17.1em;}
+}
+@keyframes blinkTextCursor{
+  from{border-right-color: rgba(255,255,255,.75);}
+  to{border-right-color: transparent;}
+}
+
+/* Слайдер */
+.adaptivSlayder {
+    position: relative;
+    max-width: 100%;
+    margin: 3vw auto;
+}
+  .adaptivSlayder input[name="kadoves"] {
+    display: none;
+  }
+  .kadoves {
+    position: absolute;
+    left: 0;
+    bottom: -35px;
+    text-align: center;
+    width: 100%;
+  }
+  .kadoves label {
+    display: inline-block;
+    width: 7px; 
+    height: 7px;
+    cursor: pointer;
+    margin: 0 2px;
+    box-shadow: 0 0 3px 0 rgba(0, 0, 0, .7);
+    border-radius: 55%;
+    border: 4px solid #2f363c;
+    background-color: #738290;
+  }
+  #slaid1:checked~.kadoves label[for="slaid1"] {
+    background-color: white;
+  }
+  #slaid2:checked~.kadoves label[for="slaid2"] {
+    background-color: white;
+  }
+  #slaid3:checked~.kadoves label[for="slaid3"] {
+  background-color: white;
+  }
+  .adaptivSlayderlasekun {
+    overflow: hidden;
+  }
+  .abusteku-deagulus {
+    display: flex;
+    width: 100%;
+    transition: all 0.6s;
+    object-fit: cover;
+    object-position: 0 0;
+    height: 35vw;
+    position: relative;
+  }
+  #slaid1:checked~adaptivSlayderlasekun abusteku-deagulus {
+    transform: translate(0);
+  }
+  #slaid2:checked~.adaptivSlayderlasekun .abusteku-deagulus {
+    transform: translateX(-100%);
+  }
+  #slaid3:checked~.adaptivSlayderlasekun .abusteku-deagulus {
+    transform: translateX(-200%);
+  }
+  .bg, .bg1, .bg2 {
+    width: 100%;
+    flex-shrink:0;
+    object-fit: cover;
+    object-position: 0 0;
+    background-position: center;
+    position: relative;
+    background-size: 100%;
+    }
+    .bg{
+    background: url('./images/moskovskij-muzej-sovremennogo-iskusstva_9.jpg') center;
+    width: 90%;  
+    height: 100%; 
+    margin-right: 10%;
+    margin-left: 5%;
+    }
+    .bg1{
+      background: url('./images/CUBE-04_08_2022-–-0037-scaled.jpg') center; 
+      width: 90%;  
+      height: 100%; 
+      margin-right: 10%;
+      }
+      .bg2{
+        background: url('./images/fb6677138541559318db42bd05ffbc74.jpeg') center;     
+        width: 90%;  
+        height: 100%; 
+        margin-right: 10%;      
+        }
+    .bg span, .bg1 span, .bg2 span, .bg5 span, .bg6 span{
+    color: #fff;
+    vertical-align: -50%;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 4vw;
+    margin-left: 2vw;
+    }
+    .hr1{
+        margin-top: 7vw;
+        background-color: rgb(180,150,110);
+        height: 2px;
+        width: 81.8%;
+        margin-left: 10%;
+        align-self: center;
+    }
+    .data{
+        font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        font-size: 2.5vw;
+        color: white;
+        margin-left: 2vw;
+        margin-top: 20vw;
+    }
+
+    .but, .but1, .but2{
+        font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        font-size: 1.3vw;
+        color: white;
+        border: none;
+        margin-left: 2vw;
+        margin-top: 1vw;
+        padding: 0.5vw 1vw 0.5vw 1vw;
+        transition: 1s;
+    }
+    .but{
+     background-color: rgb(0, 0, 0);         
+    }
+    .but a, .but1 a, .but2 a{
+      text-decoration: none;
+      color: white;
+      transition: 1s;
+    }
+    .but a:hover{
+      color: rgb(255, 255, 255);
+      transform: scale(1.2); 
+    }
+    .but1 a:hover{
+      color: rgb(255, 255, 255);
+      transform: scale(1.2); 
+    }
+    .but2 a:hover{
+      color: rgb(255, 255, 255);
+      transform: scale(1.2); 
+    }
+    .but:hover{
+      background-color: rgb(0, 0, 0);
+      transform: scale(1.2); 
+    }
+    .but1{
+    background-color:  rgb(0, 0, 0);
+    }  
+    .but1:hover{
+      background-color: rgb(0, 0, 0);
+      transform: scale(1.2); 
+    }
+    .but2{
+      background-color:  rgb(0, 0, 0);
+    }  
+      .but2:hover{
+        background-color: rgb(0, 0, 0);
+        transform: scale(1.2); 
+    }
+
+      .rotatingText { 
+        align-items: center;
+        display: flex;
+        height: 100vh;
+        text-align: center;
+      }
+      
+      .rotatingText-content { 
+        position: relative;
+        width: 100%;
+      }
+      
+      .rotatingText-description { 
+        font-family: 'Georgia', serif;
+        font-style: italic;
+        font-size: 14px;
+        margin: 0;
+        
+        @media (min-width: 768px) { 
+          font-size: 18px;
+        }
+      }
+      
+      .rotatingText-adjective { 
+        font-family: 'Open Sans', sans-serif;
+        font-size: 40px;
+        left: 0;
+        margin-bottom: 0;
+        margin-top: 30px;
+        opacity: 0;
+        position: absolute;
+        right: 0;
+        text-align: center;
+        text-transform: uppercase;
+        top: 0;
+        
+        @media (min-width: 768px) { 
+          font-size: 70px;
+        }
+        
+        &:nth-of-type(1) { 
+          animation: rotate-text-up 1.5s .75s; 
+        }
+        
+        &:nth-of-type(2) { 
+          animation: rotate-text-up 1.5s 2s; 
+        }  
+        
+        &:nth-of-type(3) { 
+          animation: fade-text-in 1.5s 3.25s forwards;
+        }
+      }
+      
+
+      @keyframes rotate-text-up { 
+        0% {
+          transform: translate3d(0, 80px, 0);
+          opacity: 0;
+        }
+        
+        20%, 80% {
+          transform: translate3d(0, 0, 0);
+          opacity: 1;
+        }
+        
+        100% {
+          transform: translate3d(0, -40px, 0);
+          opacity: 0;
+        }
+      }
+      
+      @keyframes fade-text-in { 
+        0% {
+          opacity: 0;
+          transform: translate3d(0, 80px, 0);
+        }
+        
+        50%, 100% {
+          opacity: 1;
+          transform: translate3d(0, 0, 0);
+        }
+      }
+

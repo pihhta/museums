@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>ПОКУПКА БИЛЕТОВ</title>
+    <link rel="stylesheet" type="text/css" href="style3.css">
+    <script src="./script4.js"></script>
+</head>
+
+<body>
+    <form id="form">
+
+
+        <div class="form-control">
+            <label for="name" id="label-name">
+                ФИО
+            </label>
+            <input type="text" id="name" placeholder="Введите ваше имя" />
+        </div>
+        <div class="form-control">
+            <label for="email" id="label-email">
+                Email
+            </label>
+            <input type="email" id="email" placeholder="Введите ваш email" />
+        </div>
+        <div class="form-control">
+            <label for="email" id="label-email">
+                Номер телефона
+            </label>
+            <input id="phone" class="txt" name="phone" type="phone" placeholder="Введите ваш номер телефона" />
+        </div>
+        <div class="form-control">
+            <label for="role" id="label-role">
+                Выберите музей
+            </label>
+            <select name="role" id="role">
+                <option value="0">MOSCOW MUSEUM OF MODERN ART</option>
+                <option value="1">CUBE.MOSCOW</option>
+                <option value="2">СЕНСОРИУМ</option>
+            </select>
+        </div>
+<p>Если вы выбрали MOSCOW MUSEUM OF MODERN ART, выберите экспозицию:</p>
+        <div class="checkbox">
+            <div>
+            <input type="checkbox" id="scales" name="scales" checked />
+            <label for="scales">РОСТИСЛАВ ЛЕБЕДЕВ. ЖЕСТКИЕ СКЛЕЙКИ</label>
+          </div>
+        
+          <div>
+            <input type="checkbox" id="horns" name="horns" />
+            <label for="horns">ЗУРАБ ЦЕРЕТЕЛИ. КОЛЛЕКЦИЯ РАБОТ</label>
+          </div>
+          <div>
+            <input type="checkbox" id="horns" name="horns" />
+            <label for="horns">ИВАН ЧЕМАКИН. ДОРОЖНОЕ КИНО</label>
+          </div>
+          <div>
+            <input type="checkbox" id="horns" name="horns" />
+            <label for="horns">DUSTO. ЧЕРТОПОЛОХ</label>
+          </div>
+        </div>
+        <br>
+        <p>Если вы выбрали CUBE.MOSCOW, выберите экспозицию:</p>
+        <div class="radio">
+            <div>
+            <input type="radio" id="scales"  name="group1"/>
+            <label for="scales">ВЫСТАВКА ОЛИ КРОЙТОР «ПРОЦЕСС», SYNTAX GALLERY</label>
+          </div>
+        
+          <div>
+            <input type="radio" id="horns"  name="group2"/>
+            <label for="horns">ВЫСТАВКА КИРИЛЛА КИПЯТКОВА «ВСПЫШКА», ГАЛЕРЕЯ ЛУЧ</label>
+          </div>
+          <div>
+            <input type="radio" id="horns" name="group3"/>
+            <label for="group3">ВЫСТАВКА ЛЁХИ QJAY «САМО ПО СЕБЕ», MOST WANTED GALLERY</label>
+          </div>
+          <div>
+            <input type="radio" id="horns" name="group4"/>
+            <label for="group4">ВЫСТАВКА «АСТАТИЧНОСТЬ», ГАЛЕРЕЯ МОНАРТ</label>
+          </div>
+        </div>
+        <br>
+        <p>Если вы выбрали СЕНСОРИУМ, выберите экспозицию:</p>
+        <div class="checkbox">
+            <div>
+            <input type="checkbox" id="scales" name="scales" checked />
+            <label for="scales">ОСЯЗАНИЕ</label>
+          </div>
+        
+          <div>
+            <input type="checkbox" id="horns" name="horns" />
+            <label for="horns">ОБОНЯНИЕ</label>
+          </div>
+          <div>
+            <input type="checkbox" id="horns" name="horns" />
+            <label for="horns">ВКУС</label>
+          </div>
+          <div>
+            <input type="checkbox" id="horns" name="horns" />
+            <label for="horns">СЛУХ</label>
+          </div>
+        </div>
+        <br>
+        <fieldset>
+        <table>
+            <tr><th>MOSCOW MUSEUM OF MODERN ART</th><th>CUBE.MOSCOW</th><th>СЕНСОРИУМ</th></tr> 
+            <tr><td>РОСТИСЛАВ ЛЕБЕДЕВ. ЖЕСТКИЕ СКЛЕЙКИ</td><td>ВЫСТАВКА ОЛИ КРОЙТОР «ПРОЦЕСС», SYNTAX GALLERY</td><td>ОСЯЗАНИЕ</td></tr> 
+            <tr><td>ЗУРАБ ЦЕРЕТЕЛИ. КОЛЛЕКЦИЯ РАБОТ</td><td>ВЫСТАВКА КИРИЛЛА КИПЯТКОВА «ВСПЫШКА», ГАЛЕРЕЯ ЛУЧ</td><td>ОБОНЯНИЕ</td></tr> 
+            <tr><td>ИВАН ЧЕМАКИН. ДОРОЖНОЕ КИНО</td><td>ВЫСТАВКА ЛЁХИ QJAY «САМО ПО СЕБЕ», MOST WANTED GALLERY</td><td>ВКУС</td></tr> 
+            <tr><td>DUSTO. ЧЕРТОПОЛОХ</td><td>ВЫСТАВКА «АСТАТИЧНОСТЬ», ГАЛЕРЕЯ МОНАРТ</td><td>СЛУХ</td></tr> 
+        </table>
+        </fieldset>
+        <a href="#" class="button">ЗАКАЗАТЬ</a>
+</form>
+</body>
+</html>
